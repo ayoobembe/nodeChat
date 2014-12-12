@@ -60,4 +60,10 @@ i) Reconfig gruntfile to run mocha-casper
 d) Installing the (Express) server
 npm install --save express
 
+e) Using express
+npm install --save ejs
+
+
+
+
 
