@@ -1,0 +1,14 @@
+Initializing a node project:
+i) $ npm init => inits project, creates package.json
+
+ii) $ touch .gitignore - add "node_modules"
+
+iii) 
+	$npm install --save-dev jasmine-node (installs locally to dependencies).
+	$npm install -g jasmine-node (installs globally).
+	(also installs coffescript).
+
+	- creates node_modules dir
+
+
+iv) modify "scripts" k-v pair in package.json to use jasmine-node test specs:

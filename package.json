@@ -1,0 +1,22 @@
+{
+  "name": "nodeChat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node spec/ --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ayoobembe/nodeChat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayoobembe/nodeChat/issues"
+  },
+  "homepage": "https://github.com/ayoobembe/nodeChat",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
