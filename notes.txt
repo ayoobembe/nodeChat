@@ -3,7 +3,7 @@ i) $ npm init => inits project, creates package.json
 
 ii) $ touch .gitignore - add "node_modules"
 
-iii) 
+iii)
 	$npm install --save-dev jasmine-node (installs locally to dependencies).
 	$npm install -g jasmine-node (installs globally).
 	(also installs coffescript).
@@ -12,3 +12,5 @@ iii)
 
 
 iv) modify "scripts" k-v pair in package.json to use jasmine-node test specs:
+
+NOTE: jasmine-node is for unit tests i.e (I think), testing functions .. e.t.c.
