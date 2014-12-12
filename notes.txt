@@ -1,4 +1,4 @@
-Initializing a node project:
+A) Initializing a node project:
 i) $ npm init => inits project, creates package.json
 
 ii) $ touch .gitignore - add "node_modules"
@@ -14,3 +14,50 @@ iii)
 iv) modify "scripts" k-v pair in package.json to use jasmine-node test specs:
 
 NOTE: jasmine-node is for unit tests i.e (I think), testing functions .. e.t.c.
+
+
+b) Grunt
+$ npm install -g grunt
+$ npm install --save-dev grunt
+$ npm install -g grunt-cli
+$ npm install --save-dev grunt-cli
+$ npm install --save-dev grunt-jasmine-node
+		=> required for grunt to run our jasmine node tests
+
+
+Notest on testing:
+
+Unit testing:
+	Testing individual classes and class methods. Done with 
+	jasmine-node which is automated (in this case) through
+	grunt.
+	Contained in top-level/spec folder.
+
+Feature testing:
+	Testing the features of an application (i.e what it's able
+	to do/what it should do). We are using Casperjs for
+	that. Mocha is also used as a 'test harness(?)', and chai,
+	an exception library.
+	contained in top-level/test folder
+
+
+
+c) Feature testing tools
+npm install --save-dev mocha
+npm install --save-dev chai
+npm install --save-dev phantomjs
+npm install --save-dev casperjs
+npm install --save-dev mocha-casperjs
+npm install --save-dev casper-chai
+
+npm install -g phantomjs
+
+npm install --save-dev grunt-mocha-casperjs
+
+i) Reconfig gruntfile to run mocha-casper
+
+
+d) Installing the (Express) server
+npm install --save express
+
+
