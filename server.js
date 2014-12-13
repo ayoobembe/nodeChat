@@ -22,6 +22,13 @@ app.get('/sockets', function() {
 	response.render('sockets');
 })
 
+// io.on('connection', function(socket) {
+// 	console.log('A user is connected');
+// 	socket.on('disconnect', function() {
+// 		console.log('user disconnected');
+// 	});
+// })
+
 server.listen(3000, function() {
 	console.log("Server listening on port 3000");
 });
