@@ -3,12 +3,10 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 var socket = require('./src/socketController.js')(io);
+var sequelize = require('./database_setup.js')
 
 app.set('view engine', 'ejs');
-	//tell app to use ejs as templating engine
 app.use(express.static(__dirname + '/public'));
-	//tell app public folder is
-
 
 app.get('/', function(request,response) {
 	response.render('index');
@@ -21,13 +19,6 @@ app.get('/greetings', function(request,response) {
 app.get('/sockets', function() {
 	response.render('sockets');
 })
-
-// io.on('connection', function(socket) {
-// 	console.log('A user is connected');
-// 	socket.on('disconnect', function() {
-// 		console.log('user disconnected');
-// 	});
-// })
 
 server.listen(3000, function() {
 	console.log("Server listening on port 3000");

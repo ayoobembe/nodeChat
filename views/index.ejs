@@ -12,13 +12,19 @@
 			#messages li {padding: 5px 10px;}
 			#messages li:nth-child(odd) {background: #eee;}
 		</style>
-
 		<script src='/socket.io/socket.io.js'></script>
 		<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
 		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 	</head>
 
 	<body>
+
+		<nav>
+			<h1>NodeChat</h1>
+			<a href=""><p>Sign up</p></a>
+			<a href=""><p>Sign in</p></a>
+		</nav>
+
 		<ul id="messages"></ul>
 
 		<form action="">

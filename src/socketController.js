@@ -9,7 +9,6 @@ var socket = function(io){
 			io.emit('chat message', msg)
 		});
 	});
-	
 };
 
 module.exports = socket;
